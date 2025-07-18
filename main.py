@@ -4,7 +4,7 @@ from cell import Cell
 
 
 def main():
-    win = Window(800, 600)
+    win = Window(800, 600, center_on_active=True)
 
     c1 = Cell(Point(100, 100), Point(150, 150), win)
     c1.draw()
@@ -13,6 +13,7 @@ def main():
     c2.draw()
 
     win.wait_for_close()
+
 
 
 main()
